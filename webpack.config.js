@@ -29,7 +29,7 @@ const rules = [
           // importLoaders allows to configure how many loaders before css-loader should be applied to @imported resources.
           // 0 => no loaders (default); 1 => postcss-loader; 2 => postcss-loader, sass-loader
           importLoaders: 2,
-          modules: true,
+          //          modules: true,
           sourceMap: true,
         },
       },

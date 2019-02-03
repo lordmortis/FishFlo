@@ -1,8 +1,8 @@
 import * as THREE from "three";
 // TODO: OrbitControls import three.js on its own, so the webpack bundle includes three.js twice!
 import OrbitControls from "orbit-controls-es6";
-import * as Detector from "../js/vendor/Detector";
-import * as DAT from "../js/vendor/dat.gui.min";
+import * as Detector from "./vendor/Detector";
+import * as DAT from "./vendor/dat.gui.min";
 import * as checkerboard from "../textures/checkerboard.jpg";
 import * as star from "../textures/star.png";
 import * as vertexShader from "../glsl/vertexShader.glsl";
@@ -40,7 +40,7 @@ class Application {
     this.setupHelpers();
     this.setupFloor();
     this.setupControls();
-    this.setupGUI();
+    //    this.setupGUI();
 
     {
       const side = 20;
